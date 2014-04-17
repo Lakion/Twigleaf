@@ -1,0 +1,46 @@
+{
+    "name": "lakion/twigleaf",
+    "type": "library",
+    "description": "Modify Twig templates without manipulating the files. Overriding of third party templates.",
+    "keywords": ["twig", "override", "themes"],
+    "homepage": "http://lakion.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name":     "Paweł Jędrzejewski",
+            "homepage": "http://pjedrzejewski.com"
+        },
+        {
+            "name":     "Lakion",
+            "homepage": "http://lakion.com"
+        },
+        {
+            "name":     "Community contributions",
+            "homepage": "http://github.com/Lakion/Twigleaf/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+
+        "twig/twig":        "1.15.*",
+        "wa72/htmlpagedom": "dev-master@dev"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.0",
+        "behat/behat":     "~2.5"
+    },
+    "autoload": {
+        "psr-0": { "Lakion\\Twigleaf\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-0": { "spec\\Lakion\\Twigleaf\\": "spec/" }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
